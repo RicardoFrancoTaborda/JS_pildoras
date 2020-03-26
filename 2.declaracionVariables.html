@@ -2,33 +2,25 @@
 <html>
 <head>
 	<title></title>
+<script>
+	var precioCoche=60000;
+	var dineroAhorrado=prompt('Ingrese el dinero que tienes ahorrado');
+	/*var edad=prompt('Ingresa la edad que tienes'); 
+	*/
+	var loteria=prompt('Te ganaste la loteria??');
+	
+	//if(dineroAhorrado>=precioCoche && edad>17){
+		
+	if (dineroAhorrado>=precioCoche || loteria=='si') {
+		alert('puedes comprar el coche');
+	} else{
+		alert('No puedes comprar el coche');
+	}
+	alert('continuamos con el programa ejecutandose');
+</script>
 	
 </head>
 <body>
-<input type="button" id="boton1">
-<input type="button" id="boton2">
-<input type="text" id="micuadro">
-<script>
-	var miBoton=document.getElementById('boton1');
-	var miBoton2=document.getElementById('boton2');
-	var cuadroTexto=document.getElementById('micuadro');
 
-	miBoton.style.width='150px';
-	miBoton.style.height='150px';
-	//miBoton.style.backgroundColor='blue';
-	
-
-	miBoton2.style.width='150px';
-	miBoton2.style.height='150px';
-	//miBoton.style.backgroundColor='green';
-
-	miBoton2.focus();
-
-	cuadroTexto.style.background='dodgerblue';
-	cuadroTexto.value='Escriba texto';
-	
-
-
-</script>
 </body>
 </html>
