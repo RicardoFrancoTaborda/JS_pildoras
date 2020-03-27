@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
 	<title></title>
-<script>
-	var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
-	var contador=0;
-	while(contador<meses.length){
-		document.write(meses[contador]+'<br/>');
-		contador++;
+
+<style>
+	#contenedor{
+		width: 35%;
+		background-color: dodgerblue;
+		margin: auto;
+		padding: 25px;
 	}
-</script>
+</style>
+<script>
+	var Nombre, Edad, Poblacion;
 	
-</head>
+	Nombre=prompt('Ingresa tu nombre');
+	while(!isNaN(Nombre)){
+		Nombre=prompt('Ingresa un nombre valido');
+	}
+	
+	Edad=prompt('Ingresa tu edad');
+	
+	while(Edad<=0 || Edad>105 || isNaN(Edad)){
+		Edad=prompt('Introduce una edad valida');
+	}
+	
+	Poblacion=prompt('ingresa donde vives');
+	while(!isNaN(Poblacion)){
+		Poblacion=prompt('Ingresa una poblacion valida');
+	}
+
+</script>
+
 <body>
+	
+	<div id="contenedor">
+		<p>Nombre:
+		<script>document.write(Nombre);</script>
+		</p>
+		<p>Edad:
+		<script>document.write(Edad+' años');</script>
+		</p>
+		<p>Poblacion:
+		<script>document.write(Poblacion);</script>
+		</p>
+
+	</div>
+
 
 </body>
 </html>
