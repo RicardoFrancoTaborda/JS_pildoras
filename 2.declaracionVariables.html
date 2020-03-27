@@ -3,20 +3,30 @@
 <head>
 	<title></title>
 <script>
-	var precioCoche=60000;
-	var dineroAhorrado=prompt('Ingrese el dinero que tienes ahorrado');
-	/*var edad=prompt('Ingresa la edad que tienes'); 
-	*/
-	var loteria=prompt('Te ganaste la loteria??');
-	
-	//if(dineroAhorrado>=precioCoche && edad>17){
-		
-	if (dineroAhorrado>=precioCoche || loteria=='si') {
-		alert('puedes comprar el coche');
+	var num1=prompt('Ingresa primer numero');
+	var num2=prompt('Ingresa segundo numero');
+	if (!isNaN(num1) && !isNaN(num2)) {
+
+	var operacion=prompt('¿Cualoperacion deseas realizar?  suma/resta/multiplicacion/division').toLowerCase();
+		if (operacion=='suma') {
+			alert(parseInt(num1)+parseInt(num2));
+		} else if (operacion=='resta') {
+			alert(parseInt(num1)-parseInt(num2));
+		} else if (operacion=='multiplicacion' || operacion=='multiplicación' ) {
+			alert(parseInt(num1)*parseInt(num2));
+		}else if (operacion=='divusion' || operacion=='división'){
+			alert(parseInt(num1)/parseInt(num2));
+		} else{
+			alert('La operacion que ingresaste no existe');
+		}
 	} else{
-		alert('No puedes comprar el coche');
+		if (typeof(num1)=='string' || typeof(num2)=='string') {
+			alert('Ingresaste valores numericos')
+		}else{
+			alert('Ocurrio un error no identificado');
+		}
+		
 	}
-	alert('continuamos con el programa ejecutandose');
 </script>
 	
 </head>
