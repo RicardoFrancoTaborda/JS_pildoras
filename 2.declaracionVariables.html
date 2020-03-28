@@ -5,11 +5,23 @@
 	<title></title>
 
 <script>
-	var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+	var Trabajadores= new Array();
+	var persona="";
+	var contador=0;
 
-	for (var i = 0; i < meses.length; i++) {
-		document.write('mes de '+meses[i]+'<br/>');
+	while(persona!='salir'){
+		persona=prompt('Ingresa trabajador').toLowerCase();
+		Trabajadores[contador]=persona;
+		contador++;
+	
 	}
+
+	Trabajadores.pop();
+
+	for (var i = 0; i < Trabajadores.length; i++) {
+		document.write(Trabajadores[i]+'<br/>');
+	}
+
 </script>
 
 
