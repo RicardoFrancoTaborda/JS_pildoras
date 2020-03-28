@@ -4,52 +4,18 @@
 	<meta charset="utf-8">
 	<title></title>
 
+<script>
+	var meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"];
+
+	for (var i = 0; i < meses.length; i++) {
+		document.write('mes de '+meses[i]+'<br/>');
+	}
+</script>
+
 
 
 <body>
 
-	<table width="25%" border="0">
-		<tr>
-			<td><label for="textfield"></label>
-				<input type="text" name="textfield" id="c_mensaje">
-			</td>
-			<td><label for="textfield2"></label>
-				<input type="text" name="textfield2" id="c_intentos">
-			</td>
-		</tr>
-
-	</table>
-	<script>
-	
-	var aleatorio=Math.round(Math.random()*100);
-	var numero=0;
-	var intento=0;
-	var mensaje=document.getElementById('c_mensaje');
-	var intentos_realizados=document.getElementById('c_intentos');
-	do{
-		numero=prompt('Ingresa u numero entre 0 y 100');
-		 if (aleatorio<numero) {
-				mensaje.value='mas bajo';
-				mensaje.style.fontSize='18px';
-				mensaje.style.background='pink';
-			}
-		 if (aleatorio>numero) {
-				mensaje.value='mas alto';
-				mensaje.style.fontSize='18px';
-				mensaje.style.background='blue';
-			}
-		intento++;
-		intentos_realizados.value=intento;
-		intentos_realizados.style.fontSize='25px';
-		intentos_realizados.style.color='green';
-		intentos_realizados.style.textAlign='center';
-		intentos_realizados.style.background='yellow';
-
-	}while(aleatorio!=numero);
-	mensaje.value='Numero  correcto '+numero;
-mensaje.style.fontSize='30px';
-	mensaje.style.color='blue';
-</script>
 
 </body>
 </html>
