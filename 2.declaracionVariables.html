@@ -3,23 +3,21 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-<style type="text/css">
-	.centrado{
-		text-align: center;
-	}
-</style>
+
 <script>
-	function dia_de_hoy(){
-		var hoy=new Date();
-		document.write(hoy.toDateString());
+	function escribe_nombre(nombre,apellido){
+		document.write(nombre,apellido);
 	}
-	
+
+	var miNombre=prompt('Ingresa el nombre')+" ";
+	var miApellido=prompt('Ingresa el apellido');
 </script>
 
 <body>
-<h1 class="centrado">y que dia es  hoy?</h1>
-<p>Hoy es dia: <script>dia_de_hoy();</script> </p>
-<p>Hemos dicho que hoy es dia: <script>dia_de_hoy();</script></p>
+	<p style="font-size: 24px; font-weight: bold;">
+		Hola: <script>escribe_nombre(miNombre,miApellido);</script> bienvenido a mi pagina web.
+	</p>
+	<p>Aca tambien vamos a escribir el mismo nombre <script>escribe_nombre(miNombre,miApellido);</script></p>
 
 </body>
 </html>
