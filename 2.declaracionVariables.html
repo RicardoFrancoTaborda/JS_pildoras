@@ -3,31 +3,23 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
-
+<style type="text/css">
+	.centrado{
+		text-align: center;
+	}
+</style>
 <script>
-	var Trabajadores= new Array();
-	var persona="";
-	var contador=0;
-
-	while(persona!='salir'){
-		persona=prompt('Ingresa trabajador').toLowerCase();
-		Trabajadores[contador]=persona;
-		contador++;
+	function dia_de_hoy(){
+		var hoy=new Date();
+		document.write(hoy.toDateString());
+	}
 	
-	}
-
-	Trabajadores.pop();
-
-	for (var i = 0; i < Trabajadores.length; i++) {
-		document.write(Trabajadores[i]+'<br/>');
-	}
-
 </script>
 
-
-
 <body>
-
+<h1 class="centrado">y que dia es  hoy?</h1>
+<p>Hoy es dia: <script>dia_de_hoy();</script> </p>
+<p>Hemos dicho que hoy es dia: <script>dia_de_hoy();</script></p>
 
 </body>
 </html>
