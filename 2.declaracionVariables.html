@@ -5,48 +5,14 @@
 	<title></title>
 
 <script>
-	var repetir='si';
-	
+	function aviso(){
+		alert('Es la primera funcion');
 
-	function sumar(num1,num2){
-		alert('La suma es: '+(num1+num2));
 	}
-	function restar(num1,num2){
-		alert('La resta es: '+(num1-num2));
-	}
-	function multiplicar(num1,num2){
-		alert('La multiplicacion es: '+(num1*num2));
-	}
-	function dividir(num1,num2){
-		alert('La division es: '+(num1/num2));
-	}
-
-	do{
-	var operacion=prompt('ingresa la operacion que deseas realizar').toLowerCase();
-
-	var operador1=parseInt(prompt('Ingresa primer numero '));
-	var operador2=parseInt(prompt('Ingresa segundo numero'));
-
-	if (operacion=='sumar') {
-		sumar(operador1,operador2);
-	} else if (operacion=='restar') {
-		restar(operador1,operador2);
-	} else if (operacion=='multiplicar') {
-		multiplicar(operador1,operador2);
-	} else if (operacion=='dividir') {
-		dividir(operador1,operador2);
-	} else{
-		alert('Esta funcion no esta contemplada');
-	}
-
-	repetir=prompt('Deseas repetir?').toLowerCase();
-
-}while(repetir=='si');
-
 </script>
 
 <body>
-
+<img src="fotografias/Lobo.png" width="400" height="270" onmouseover="aviso()">
 
 </body>
 </html>
